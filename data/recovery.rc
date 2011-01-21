@@ -46,6 +46,7 @@ loglevel 9
     mkdir /data 0771 system system
     mkdir /cache 0770 system cache
     mkdir /config 0500 root root
+    mkdir /efs
 
     # Directory for putting things only root should see.
     mkdir /mnt/secure 0700 root root
