@@ -1,7 +1,11 @@
 on boot
     mount debugfs /sys/kernel/debug /sys/kernel/debug
 
+# Backwards Compat - XXX: Going away in G*
     symlink /system/etc /etc
+    symlink /mnt/sdcard /sdcard
+    symlink /mnt/emmc /emmc
+
 # Include extra init file
     import /system/etc/init.local.rc
 
